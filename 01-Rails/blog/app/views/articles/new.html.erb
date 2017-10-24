@@ -1,0 +1,13 @@
+<h1>Créer un nouvel article</h1>
+
+<%= form_tag (articles_path) do %>
+<%= label_tag 'title', 'Title' %>
+<%= text_field_tag 'title' %>
+
+<%= label_tag 'text','Corpus' %>
+<%= text_area_tag 'text' %>
+
+<%= submit_tag "Créer un nouvel article"%>
+<%end%>
+
+

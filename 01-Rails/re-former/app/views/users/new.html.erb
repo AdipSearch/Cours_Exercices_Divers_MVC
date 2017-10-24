@@ -1,0 +1,14 @@
+<%=form_tag (users_path) do %>
+  
+<%= label_tag 'username', 'username'%>
+<%= text_field_tag 'username'%>
+
+<%= label_tag 'email', 'email'%>
+<%= text_field_tag 'user[email]'%>
+
+<%= label_tag 'bio', 'bio'%>
+<%= text_field_tag 'user[bio]'%>
+
+<%= submit_tag "M'inscrire"%>
+
+<%end%>

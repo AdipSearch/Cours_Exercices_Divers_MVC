@@ -1,0 +1,22 @@
+<h1>Voici les utilisateurs</h1>
+
+<table>
+  <tr>
+    <th>Username</th>
+    <th>Email</th>
+    <th>Bio</th>  
+  </tr>
+ 
+  <% @users.each do |user| %>
+    <tr>
+      <td><%= user.username %></td>
+      <td><%= user.email %></td>
+      <td><%= user.bio %></td>
+      
+    </tr>
+  <% end %>
+</table>
+
+<p>
+<%= puts 1+1 %>
+</p>
