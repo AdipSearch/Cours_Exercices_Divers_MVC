@@ -1,0 +1,21 @@
+<h1>Derniers gossips</h1>
+
+<table>
+  <tr>
+    <th>Author</th>
+    <th>Story</th>
+     
+  </tr>
+ 
+  <% @gossips.each do |gossip| %>
+    <tr>
+      <td><%= gossip.anonymous_author %></td>
+      <td><%= gossip.content %></td>
+      <td><%= link_to "Voir" , gossip_path(gossip) %> </td>
+      <td><%= link_to "Éditer" , edit_gossip_path(gossip) %> </td>
+      <td><%= link_to "Supprimer", gossip_path(gossip), method: :delete%></td>
+    </tr>
+  <% end %>
+</table>
+
+<%= link_to "Publier une nouvelle story" , new_gossip_path %>

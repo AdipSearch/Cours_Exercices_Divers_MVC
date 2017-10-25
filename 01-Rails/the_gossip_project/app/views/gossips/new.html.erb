@@ -1,0 +1,13 @@
+<h1>Raconter une nouvelle story</h1>
+
+<%=form_tag (gossips_path) do %>
+  
+<%= label_tag 'anonymous_author', 'Pseudo'%>
+<%= text_field_tag 'gossip[anonymous_author]'%>
+
+<%= label_tag 'content', 'L\'histoire croustillante'%>
+<%= text_field_tag 'gossip[content]'%>
+
+<%= submit_tag "Je balance!"%>
+
+<%end%>

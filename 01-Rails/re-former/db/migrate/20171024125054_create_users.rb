@@ -1,8 +1,6 @@
 class CreateUsers < ActiveRecord::Migration[5.1]
  
-validates :username, presence: true
-validates :email, presence: true
-validates :bio, presence: true
+
 
   def change
     create_table :users do |t|
